@@ -122,3 +122,55 @@ h1 {
 .flow li:not(:last-child)::after {
   content: "\00a0\2192";
 }
+
+.screen {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  padding: 80px 16px;
+}
+
+.shot {
+  margin: 0;
+  flex: 0 1 960px;
+  min-width: 0;
+}
+
+.shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  border: 1px solid #e6e6ea;
+  box-shadow: 0 12px 40px rgba(17, 17, 17, 0.08);
+}
+
+.doodle-arrow {
+  flex: 0 0 auto;
+  width: clamp(96px, 10vw, 160px);
+  height: auto;
+  stroke: var(--text);
+  stroke-width: 3.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+@media (max-width: 720px) {
+  .screen {
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .shot {
+    flex: none;
+    width: 100%;
+  }
+
+  .doodle-arrow {
+    width: 96px;
+    transform: rotate(90deg);
+  }
+}
