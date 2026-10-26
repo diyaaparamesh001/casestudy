@@ -129,7 +129,7 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 32px;
+  gap: 40px;
   padding: 80px 16px;
 }
 
@@ -150,13 +150,12 @@ h1 {
 
 .doodle-arrow {
   flex: 0 0 auto;
-  width: clamp(96px, 10vw, 160px);
+  width: clamp(40px, 4vw, 60px);
   height: auto;
   stroke: var(--text);
   stroke-width: 3.5;
   stroke-linecap: round;
   stroke-linejoin: round;
-  transform: rotate(90deg);
 }
 
 @media (max-width: 720px) {
@@ -172,6 +171,6 @@ h1 {
   }
 
   .doodle-arrow {
-    width: 96px;
+    width: 40px;
   }
 }
