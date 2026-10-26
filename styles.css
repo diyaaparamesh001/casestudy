@@ -52,3 +52,38 @@ h1 {
   line-height: 1.05;
   letter-spacing: -0.02em;
 }
+
+.page {
+  min-height: 100vh;
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 56px;
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 80px 16px;
+}
+
+.role h2 {
+  margin: 0 0 16px;
+  font-size: clamp(24px, 3vw, 32px);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.role p {
+  margin: 0 0 12px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.role .intent {
+  margin-top: 20px;
+  padding-left: 16px;
+  border-left: 3px solid var(--text);
+}
+
+.role .intent span {
+  font-weight: 600;
+}
