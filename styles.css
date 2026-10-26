@@ -156,6 +156,7 @@ h1 {
   stroke-width: 3.5;
   stroke-linecap: round;
   stroke-linejoin: round;
+  transform: rotate(90deg);
 }
 
 @media (max-width: 720px) {
@@ -172,37 +173,5 @@ h1 {
 
   .doodle-arrow {
     width: 96px;
-    transform: rotate(90deg);
   }
-}
-
-.page.home-screen {
-  max-width: 1280px;
-  gap: 24px;
-}
-
-.home-screen h2 {
-  margin: 0;
-  font-size: clamp(28px, 4vw, 40px);
-  font-weight: 700;
-  letter-spacing: -0.01em;
-}
-
-.home-shot {
-  margin: 0;
-}
-
-.home-shot figcaption {
-  margin-bottom: 12px;
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.home-shot img {
-  display: block;
-  width: 100%;
-  height: auto;
-  border-radius: 12px;
-  border: 1px solid #e6e6ea;
-  box-shadow: 0 12px 40px rgba(17, 17, 17, 0.08);
 }
