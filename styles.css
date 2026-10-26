@@ -135,7 +135,7 @@ h1 {
 
 .shot {
   margin: 0;
-  flex: 0 1 960px;
+  flex: 0 1 440px;
   min-width: 0;
 }
 
@@ -143,8 +143,8 @@ h1 {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: 16px;
-  border: 1px solid #e6e6ea;
+  /* matches the card's own rounded corners in the screenshot */
+  border-radius: 4% / 3.2%;
   box-shadow: 0 12px 40px rgba(17, 17, 17, 0.08);
 }
 
@@ -167,6 +167,7 @@ h1 {
   .shot {
     flex: none;
     width: 100%;
+    max-width: 440px;
   }
 
   .doodle-arrow {
