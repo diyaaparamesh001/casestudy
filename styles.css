@@ -87,3 +87,38 @@ h1 {
 .role .intent span {
   font-weight: 600;
 }
+
+.workflow {
+  gap: 40px;
+}
+
+.workflow h2 {
+  margin: 0;
+  font-size: clamp(28px, 4vw, 40px);
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.flow-group h3 {
+  margin: 0 0 16px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.flow {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: clamp(18px, 2.2vw, 22px);
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--muted);
+}
+
+.flow li {
+  display: inline;
+}
+
+.flow li:not(:last-child)::after {
+  content: "\00a0\2192";
+}
